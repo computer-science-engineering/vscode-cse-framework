@@ -7,7 +7,8 @@
 		"vscode": "^1.52.0"
 	},
 	"categories": [
-		"Other"
+		"Other",
+		"Snippets"
 	],
 	"activationEvents": [
 		"onCommand:vscode-cse-framework.helloWorld"
@@ -18,6 +19,24 @@
 			{
 				"command": "vscode-cse-framework.helloWorld",
 				"title": "Hello World"
+			}
+		],
+		"snippets": [
+			{
+				"language": "java",
+				"path": "./src/snippets/java.code-snippets"
+			},
+			{
+				"language": "json",
+				"path": "./src/snippets/json.code-snippets"
+			},
+			{
+				"language": "markdown",
+				"path": "./src/snippets/markdown.code-snippets"
+			},
+			{
+				"language": "python",
+				"path": "./src/snippets/python.code-snippets"
 			}
 		]
 	},
