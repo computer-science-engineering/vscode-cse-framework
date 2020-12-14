@@ -1,8 +1,9 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 import * as fs from 'fs';
+const path = require('path');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -25,8 +26,12 @@ export function activate(context: vscode.ExtensionContext) {
 			wsedit.createFile(filePath, { overwrite: true, ignoreIfExists: true });
 			vscode.workspace.applyEdit(wsedit);
 			vscode.window.showInformationMessage('Created a new file: hello/world.md');
+			console.log("__dirname: "+ __dirname)
+			console.log("process.cwd(): "+ process.cwd())
 			try {
-				fs.copyFileSync("./static-to-copy/.gitignore", wsPath)
+				const getDirectories = (srcPath: fs.PathLike) => fs.readdirSync(srcPath).filter(file => fs.statSync(path.join(srcPath, file)).isDirectory())
+				console.log(getDirectories(__dirname + "/static-to-copy/"))
+				fs.copyFileSync(__dirname + "/static-to-copy/.gitignore", wsPath + '/' + '.gitignore')
 			} 
 			catch (Error) {
 				console.log(Error.message)
