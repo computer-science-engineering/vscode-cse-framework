@@ -11,14 +11,14 @@
 		"Snippets"
 	],
 	"activationEvents": [
-		"onCommand:vscode-cse-framework.helloWorld"
+		"onCommand:vscode-cse-framework.copyFramingOverwrite"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "vscode-cse-framework.helloWorld",
-				"title": "Hello World"
+				"command": "vscode-cse-framework.copyFramingOverwrite",
+				"title": "Copy Framing - Overwrite"
 			}
 		],
 		"snippets": [

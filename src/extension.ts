@@ -13,11 +13,20 @@ export function activate(context: vscode.ExtensionContext) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('vscode-cse-framework.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
+	let disposable = vscode.commands.registerCommand('vscode-cse-framework.copyFramingOverwrite', () => {
+		const wsedit = new vscode.WorkspaceEdit();
+		const workspaceFolders = vscode.workspace.workspaceFolders;
+		if (workspaceFolders != null && workspaceFolders.length > 0) {
+			const wsPath = workspaceFolders[0].uri.fsPath; // gets the path of the first workspace folder
+			const filePath = vscode.Uri.file(wsPath + '/hello/world.md');
+			vscode.window.showInformationMessage(filePath.toString());
+			wsedit.createFile(filePath, { overwrite: true, ignoreIfExists: true });
+			vscode.workspace.applyEdit(wsedit);
+			vscode.window.showInformationMessage('Created a new file: hello/world.md');
+		}
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from vscode-cse-framework!');
+		vscode.window.showInformationMessage('Copied Framing!');
 	});
 
 	context.subscriptions.push(disposable);
