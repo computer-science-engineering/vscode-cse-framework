@@ -3,6 +3,7 @@
 'use strict';
 
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 
 /**@type {import('webpack').Configuration}*/
 const config = {
@@ -36,6 +37,14 @@ const config = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    // @ts-ignore
+    new CopyPlugin({
+      patterns: [
+        { from: "./static-to-copy/", to: "static-to-copy" }
+      ],
+    }),
+  ],
 };
 module.exports = config;
