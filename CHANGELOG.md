@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## [0.0.2] - 2021-01-02
+
+### Fixed
+
+- Fixed missing snippets issue in extension package.
+
 ## [0.0.1] - 2021-01-02
 
 ### Added
