@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+### Added
+
+- Added linter GitHub workflow.
+
 ### Changed
 
 - Updated `eslint.workingDirectories` in settings.
