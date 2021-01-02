@@ -17,7 +17,7 @@
 	// }
 	"Solution": {
 		"scope": "python",
-		"prefix": "solution",
+		"prefix": "cse: solution",
 		"body": [
 			"class Solution:",
 			"\tdef method(self):",
@@ -31,7 +31,7 @@
 	},
 	"TestSolution": {
 		"scope": "python",
-		"prefix": "test_solution",
+		"prefix": "cse: test_solution",
 		"body": [
 			"import solution",
 			"import unittest",

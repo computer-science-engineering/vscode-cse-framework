@@ -2,6 +2,7 @@
 .vscode-test/**
 out/**
 src/**
+static-to-copy/**
 .gitignore
 .yarnrc
 vsc-extension-quickstart.md
@@ -9,3 +10,5 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
+.metals/**
+build/**

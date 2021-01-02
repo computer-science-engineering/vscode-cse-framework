@@ -17,7 +17,7 @@
 	// }
 	"Solution class": {
 		"scope": "java",
-		"prefix": "Solution class",
+		"prefix": "cse: Solution class",
 		"body": [
 			"public class ${1:${TM_FILENAME_BASE}} {",
 			"\tpublic static void main(String[] args) {",
@@ -28,7 +28,7 @@
 	},
 	"JUnit5 SolutionTest class": {
 		"scope": "java",
-		"prefix": "JUnit5 SolutionTest class",
+		"prefix": "cse: JUnit5 SolutionTest class",
 		"body": [
 			"import static org.junit.jupiter.api.Assertions.*;",
 			"",

@@ -18,7 +18,7 @@
 
 	"Problem Metadata": {
 		"scope": "json",
-		"prefix": "problem-metadata",
+		"prefix": "cse: problem-metadata",
 		"body": [
 			"{",
 			"\t\"type\": \"Coding\\Systems Design\\Puzzle\\Behavioral\\Reading\\Course\",",
