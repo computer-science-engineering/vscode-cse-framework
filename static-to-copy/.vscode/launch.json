@@ -21,7 +21,7 @@
             "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
-            "mainClass": "EducativeIo.Courses.GrokkingTheCodingInterview.Ch02_Pattern_SlidingWindow.P1_MaximumSumSubarrayOfSizeK.Java.Solution",
+            "mainClass": "Miscellaneous.src.Problems.Coding.RemoveDuplicatesAndReturnList.Java",
             "projectName": "learning-computer-science"
         },
         {

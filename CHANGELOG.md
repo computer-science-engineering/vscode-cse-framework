@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 ### Changed
 
 - Updated `eslint.workingDirectories` in settings.
+- VSCode launch.json `mainClass` for one configuration.
+
+### Removed
+
+- Removed VSCode settings.json. This should come from the template-repo and subsequently at repo creation time.
 
 ## [0.0.2] - 2021-01-02
 
