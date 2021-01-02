@@ -1,9 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
-import { readFileSync, readdirSync } from 'fs';
-import * as fs from 'fs';
-const path = require('path');
+import * as fse from 'fs-extra'
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -17,24 +15,16 @@ export function activate(context: vscode.ExtensionContext) {
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
 	let disposable = vscode.commands.registerCommand('vscode-cse-framework.copyFramingOverwrite', () => {
-		const wsedit = new vscode.WorkspaceEdit();
 		const workspaceFolders = vscode.workspace.workspaceFolders;
 		if (workspaceFolders != null && workspaceFolders.length > 0) {
 			const wsPath = workspaceFolders[0].uri.fsPath; // gets the path of the first workspace folder
-			const filePath = vscode.Uri.file(wsPath + '/hello/world.md');
-			vscode.window.showInformationMessage(filePath.toString());
-			wsedit.createFile(filePath, { overwrite: true, ignoreIfExists: true });
-			vscode.workspace.applyEdit(wsedit);
-			vscode.window.showInformationMessage('Created a new file: hello/world.md');
-			console.log("__dirname: "+ __dirname)
-			console.log("process.cwd(): "+ process.cwd())
+			let sourceDir = __dirname + "/static-to-copy/"
+			let destDir = wsPath
 			try {
-				const getDirectories = (srcPath: fs.PathLike) => fs.readdirSync(srcPath).filter(file => fs.statSync(path.join(srcPath, file)).isDirectory())
-				console.log(getDirectories(__dirname + "/static-to-copy/"))
-				fs.copyFileSync(__dirname + "/static-to-copy/.gitignore", wsPath + '/' + '.gitignore')
-			} 
-			catch (Error) {
-				console.log(Error.message)
+				fse.copySync(sourceDir, destDir, { overwrite: true, recursive: true })
+				console.log('success!')
+			} catch (err) {
+				console.error(err)
 			}
 		}
 

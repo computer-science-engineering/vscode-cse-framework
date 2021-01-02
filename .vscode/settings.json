@@ -10,5 +10,9 @@
     "typescript.tsc.autoDetect": "off",
     "cSpell.words": [
         "wsedit"
-    ]
+    ],
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "c3.rootPackage": ""
 }
