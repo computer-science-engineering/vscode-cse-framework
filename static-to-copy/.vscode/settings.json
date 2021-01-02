@@ -381,10 +381,6 @@
     {
       "directory": "./",
       "changeProcessCWD": true
-    },
-    {
-      "directory": "./website-react-next",
-      "changeProcessCWD": true
     }
   ],
   "editor.formatOnPaste": true,
