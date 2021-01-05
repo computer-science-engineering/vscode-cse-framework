@@ -39,6 +39,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.2..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.3..HEAD
+[0.0.3]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.3
 [0.0.2]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.2
 [0.0.1]: https://github.com/computer-science-engineering/vscode-cse-framework/releases/tag/v0.0.1
