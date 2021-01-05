@@ -6,9 +6,12 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## [0.0.3] - 2021-01-05
+
 ### Added
 
 - Added linter GitHub workflow.
+- `skip_for_problems_list` property to json snippet for metadata.
 
 ### Changed
 
