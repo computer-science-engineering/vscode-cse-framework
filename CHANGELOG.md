@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+### Changed
+
+- Updated extension name.
+- Updated Changelog.
+
 ## [0.0.3] - 2021-01-05
 
 ### Added
