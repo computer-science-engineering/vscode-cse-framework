@@ -6,12 +6,15 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## [0.0.4] - 2021-01-05
+
 ### Changed
 
 - Updated extension name.
 - Updated Changelog.
 - Updated `create_problems_list.py`.
 - Updated `.gitignore`.
+- Updated extension display name.
 
 ## [0.0.3] - 2021-01-05
 
@@ -47,7 +50,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.3..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.4..HEAD
+[0.0.4]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.3..v0.0.4
 [0.0.3]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.3
 [0.0.2]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.2
 [0.0.1]: https://github.com/computer-science-engineering/vscode-cse-framework/releases/tag/v0.0.1
