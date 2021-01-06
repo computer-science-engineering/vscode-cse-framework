@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 - Updated extension name.
 - Updated Changelog.
+- Updated `create_problems_list.py`.
+- Updated `.gitignore`.
 
 ## [0.0.3] - 2021-01-05
 
