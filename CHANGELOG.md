@@ -24,6 +24,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 - Updated `eslint.workingDirectories` in settings.
 - VSCode launch.json `mainClass` for one configuration.
+- Changed `get_problems_list` to `get_problems_count`.
 
 ### Removed
 
