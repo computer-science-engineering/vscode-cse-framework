@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## Changed
+
+- Updated code-ql workflow.
+
 ## [0.0.4] - 2021-01-05
 
 ### Changed
