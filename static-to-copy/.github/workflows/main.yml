@@ -10,6 +10,8 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
       - uses: actions/checkout@v2
+      - name: Checkout submodules
+        run: git submodule update --init --recursive
       - uses: actions/setup-java@v1
         with:
           java-version: '15.0.0'

@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated `create_problems_list.py`.
 - Updated `.gitignore`.
 - Updated extension display name.
+- Updated workflow for gitmodules.
 
 ## [0.0.3] - 2021-01-05
 
