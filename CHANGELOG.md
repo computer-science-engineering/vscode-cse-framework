@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated workflow for gitmodules.
 - Updated workflow for gitmodules for all jobs.
 - Added `--remote` `--merge` to submodule update in workflow.
+- Updated build scripts.
 
 ## [0.0.3] - 2021-01-05
 
