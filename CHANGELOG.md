@@ -21,6 +21,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated extension display name.
 - Updated workflow for gitmodules.
 - Updated workflow for gitmodules for all jobs.
+- Added `--remote` `--merge` to submodule update in workflow.
 
 ## [0.0.3] - 2021-01-05
 
