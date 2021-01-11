@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [0.0.4] - 2021-01-05
 
+### Added
+
+- Documentation, builds and other plumbing.
+
 ### Changed
 
 - Updated extension name.
@@ -25,6 +29,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated build scripts.
 - Updated to new gradle packages and new gradle.
 - Updated main workflow and makefile.
+
 
 ## [0.0.3] - 2021-01-05
 
