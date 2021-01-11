@@ -9,6 +9,9 @@ endif
 # Code tasks
 #*****************
 
+install-rimraf:
+	npm install -g rimraf
+
 install-vsce:
 	npm install -g vsce
 
@@ -28,6 +31,6 @@ git-version:
 
 git: git-version
 
-code: install-vsce create-package
+code: install-rimraf install-vsce create-package
 
 all: git code

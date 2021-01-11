@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 - Documentation, builds and other plumbing.
 - Added install-vsce step for CI.
+- Added install-rimraf step for CI.
 
 ### Changed
 
