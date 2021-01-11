@@ -13,3 +13,4 @@ Until the CI automation is in place following steps may be followed:
     - CHANGELOG.md.
     - package.json.
     - vsix file name.
+- Upload vsix file to release.

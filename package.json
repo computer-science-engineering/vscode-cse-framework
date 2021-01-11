@@ -2,7 +2,7 @@
 	"name": "vscode-cse-framework",
 	"displayName": "cse-framework",
 	"description": "VSCode extension for cse repositories - provides templates, snippets, etc.",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "manas-talukdar",
 	"license": "MIT",
 	"repository": {
