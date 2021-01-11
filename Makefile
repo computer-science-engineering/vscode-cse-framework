@@ -12,8 +12,11 @@ endif
 install-rimraf:
 	npm install -g rimraf
 
-install-vsce:
-	npm install -g vsce
+# install-vsce:
+# 	npm install -g vsce
+
+install-npm-packages:
+	npm install
 
 create-package:
 	npm run vsce-package
@@ -31,6 +34,6 @@ git-version:
 
 git: git-version
 
-code: install-rimraf install-vsce create-package
+code: install-rimraf install-npm-packages create-package
 
 all: git code
