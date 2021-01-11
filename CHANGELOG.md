@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed CHANGELOG.md formatting.
+
 ## [0.0.6] - 2021-01-10
 
 - Fixed CHANGELOG.md.
@@ -39,7 +43,6 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated `create_problems_list.py`.
 - Updated `.gitignore`.
 - Updated extension display name.
-
 
 ## [0.0.3] - 2021-01-05
 
