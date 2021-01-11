@@ -6,11 +6,21 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## [0.0.6] - 2021-01-10
+
+- Fixed CHANGELOG.md.
+
+## [0.0.5] - 2021-01-10
+
 ## Changed
 
 - Updated code-ql workflow.
-
-## [0.0.4] - 2021-01-05
+- Updated workflow for gitmodules.
+- Updated workflow for gitmodules for all jobs.
+- Added `--remote` `--merge` to submodule update in workflow.
+- Updated build scripts.
+- Updated to new gradle packages and new gradle.
+- Updated main workflow and makefile.
 
 ### Added
 
@@ -20,6 +30,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Added npm install step.
 - Added development steps until CI automation is in place.
 
+## [0.0.4] - 2021-01-05
+
 ### Changed
 
 - Updated extension name.
@@ -27,12 +39,6 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 - Updated `create_problems_list.py`.
 - Updated `.gitignore`.
 - Updated extension display name.
-- Updated workflow for gitmodules.
-- Updated workflow for gitmodules for all jobs.
-- Added `--remote` `--merge` to submodule update in workflow.
-- Updated build scripts.
-- Updated to new gradle packages and new gradle.
-- Updated main workflow and makefile.
 
 
 ## [0.0.3] - 2021-01-05
@@ -69,7 +75,9 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.4..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.6..HEAD
+[0.0.6]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.5..v0.0.6
+[0.0.5]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.4..v0.0.5
 [0.0.4]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.3..v0.0.4
 [0.0.3]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.3
 [0.0.2]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.1..v0.0.2
