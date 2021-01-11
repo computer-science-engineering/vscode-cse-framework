@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 ### Added
 
 - Documentation, builds and other plumbing.
+- Added install-vsce step for CI.
 
 ### Changed
 

@@ -9,6 +9,9 @@ endif
 # Code tasks
 #*****************
 
+install-vsce:
+	npm install -g vsce
+
 create-package:
 	npm run vsce-package
 
@@ -25,6 +28,6 @@ git-version:
 
 git: git-version
 
-code: create-package
+code: install-vsce create-package
 
 all: git code
