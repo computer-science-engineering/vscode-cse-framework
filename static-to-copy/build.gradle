@@ -12,10 +12,10 @@ buildscript {
 }
 
 plugins {
-  id "org.sonarqube" version "3.0"
+  id "org.sonarqube" version "3.1.1"
 }
 
-repositories { 
+repositories {
     // https://stackoverflow.com/questions/36029754/force-gradle-to-use-http-instead-of-https
     // https://discuss.gradle.org/t/how-to-change-gradle-plugin-portal-from-https-to-http/10847/12
     jcenter()
@@ -26,7 +26,7 @@ repositories {
 ext.junit4Version        = '4.13.1'
 ext.junitVintageVersion  = '4.12.1'
 ext.junitPlatformVersion = '1.5.2'
-ext.junitJupiterVersion  = '5.7.0'
+ext.junitJupiterVersion  = '5.7.1'
 ext.log4jVersion         = '2.14.0'
 
 apply plugin: 'java'
@@ -70,7 +70,7 @@ eclipse.jdt.file.withProperties { props ->
 // gradle support from JUnit5 team that we removed after gradle native support for JUnit5: http://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle
 test {
     jvmArgs '--enable-preview'
-    
+
     // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html
     // Enable JUnit 5 (Gradle 4.6+).
     useJUnitPlatform {
@@ -96,7 +96,7 @@ dependencies {
 	//testCompile("org.junit.platform:junit-platform-runner:${junitPlatformVersion}")
     // Only needed to run tests in an (IntelliJ) IDE(A) that bundles an older version
 	//testRuntimeOnly("org.junit.platform:junit-platform-launcher:${junitPlatformVersion}")
-    
+
 	// To avoid compiler warnings about @API annotations in JUnit code
 	testCompileOnly('org.apiguardian:apiguardian-api:1.1.1')
     implementation('org.apiguardian:apiguardian-api:1.0.0')
@@ -170,7 +170,7 @@ coveralls {
 
 // https://stackoverflow.com/questions/3963708/gradle-how-to-display-test-results-in-the-console-in-real-time
 tasks.withType(Test) {
-    testLogging {        
+    testLogging {
         // set options for log level LIFECYCLE
         events TestLogEvent.FAILED,
                //TestLogEvent.PASSED,
@@ -196,9 +196,9 @@ tasks.withType(Test) {
         }
         info.events = debug.events
         info.exceptionFormat = debug.exceptionFormat
-        
+
         afterSuite { desc, result ->
-        if (!desc.parent) { // will match the outermost suite            
+        if (!desc.parent) { // will match the outermost suite
                 def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped)"
                 def startItem = '|  ', endItem = '  |'
                 def repeatLength = startItem.length() + output.length() + endItem.length()

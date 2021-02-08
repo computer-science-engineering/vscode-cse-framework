@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+## [0.0.7] - 2021-02-07
+
+### Changed
+
+- Updated to new versions of third-party libraries for static files.
+- Updated npm packages.
+
 ### Fixed
 
 - Fixed CHANGELOG.md formatting.
@@ -16,7 +23,7 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [0.0.5] - 2021-01-10
 
-## Changed
+### Changed
 
 - Updated code-ql workflow.
 - Updated workflow for gitmodules.
@@ -78,7 +85,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.6..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.7..HEAD
+[0.0.7]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.6..v0.0.7
 [0.0.6]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.5..v0.0.6
 [0.0.5]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.4..v0.0.5
 [0.0.4]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.3..v0.0.4
