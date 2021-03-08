@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [0.0.8] - 2021-03-07
 
+### Changed
+
 - Updated coverage to 5.6.
 
 ## [0.0.7] - 2021-02-07
