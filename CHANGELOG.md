@@ -8,7 +8,21 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ### Changed
 
+### Fixed
+
+### Added
+
+### Removed
+
+## [0.0.9] - 2021-04-10
+
+### Changed
+
 - Formatting updates.
+- Updated to jdk6.
+- `build.gradle` packages version updates.
+- Gradle version update.
+- Update to Github action setup java v2.
 
 ## [0.0.8] - 2021-03-07
 
@@ -95,7 +109,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.8..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.9..HEAD
+[0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.8..v0.0.9
 [0.0.8]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.7..v0.0.8
 [0.0.7]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.6..v0.0.7
 [0.0.6]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.5..v0.0.6
