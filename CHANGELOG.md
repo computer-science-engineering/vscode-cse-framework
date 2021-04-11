@@ -6,13 +6,19 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ## [Unreleased]
 
+### Added
+
 ### Changed
+
+- Changelog template updated.
+
+### Deprecated
+
+### Removed
 
 ### Fixed
 
-### Added
-
-### Removed
+### Security
 
 ## [0.0.10] - 2021-04-10
 
