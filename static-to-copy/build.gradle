@@ -4,21 +4,17 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
-    }
-    dependencies {
-        classpath 'org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.8.3'
     }
 }
 
 plugins {
-  id "org.sonarqube" version "3.1.1"
+    id "org.sonarqube" version "3.1.1"
+    id "com.github.nbaztec.coveralls-jacoco" version "1.2.12"
 }
 
 repositories {
     // https://stackoverflow.com/questions/36029754/force-gradle-to-use-http-instead-of-https
     // https://discuss.gradle.org/t/how-to-change-gradle-plugin-portal-from-https-to-http/10847/12
-    jcenter()
     mavenLocal()
     mavenCentral()
 }
@@ -32,7 +28,6 @@ ext.log4jVersion         = '2.14.1'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
-apply plugin: 'com.github.kt3k.coveralls'
 
 // https://stackoverflow.com/questions/46233314/gradle-android-jacoco-and-junit5
 apply plugin: 'jacoco'
@@ -151,7 +146,15 @@ afterEvaluate {
     }
 
     check.dependsOn jacocoJupTestReport
+
+    coverallsJacoco {
+        def jacocoJupTestReportTask = project.tasks.getByName('jacocoJupTestReport')
+        reportPath = "${buildDir}/reports/jacoco/report.xml"
+        reportSourceSets = files(jacocoJupTestReportTask.sourceDirectories.collect{ it.listFiles() }.flatten())
+    }
 }
+
+// https://github.com/ben-manes/caffeine/blob/master/build.gradle
 
 // https://github.com/codeclimate/test-reporter/issues/243
 // task jacocoFixForCodeClimate(type: Copy) {
@@ -162,11 +165,6 @@ afterEvaluate {
 //     }
 //     filter { line -> line.replaceAll("com/", "webapp/src/main/java/com/") }
 // }
-
-// https://github.com/ben-manes/caffeine/blob/master/build.gradle
-coveralls {
-  jacocoReportPath = "${buildDir}/reports/jacoco/report.xml"
-}
 
 // https://stackoverflow.com/questions/3963708/gradle-how-to-display-test-results-in-the-console-in-real-time
 tasks.withType(Test) {
