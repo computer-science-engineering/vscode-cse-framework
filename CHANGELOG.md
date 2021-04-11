@@ -18,6 +18,12 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ### Security
 
+## [0.0.12] - 2021-04-10
+
+### Fixed
+
+- Updated `build.gradle`. Fixed `coverallsJacoco`.
+
 ## [0.0.11] - 2021-04-10
 
 ### Changed
