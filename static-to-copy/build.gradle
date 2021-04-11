@@ -10,6 +10,7 @@ buildscript {
 plugins {
     id "org.sonarqube" version "3.1.1"
     id "com.github.nbaztec.coveralls-jacoco" version "1.2.12"
+    id 'com.github.kt3k.coveralls' version '2.12.0'
 }
 
 repositories {
@@ -146,15 +147,18 @@ afterEvaluate {
     }
 
     check.dependsOn jacocoJupTestReport
-
-    coverallsJacoco {
-        def jacocoJupTestReportTask = project.tasks.getByName('jacocoJupTestReport')
-        reportPath = "${buildDir}/reports/jacoco/report.xml"
-        reportSourceSets = files(jacocoJupTestReportTask.sourceDirectories.collect{ it.listFiles() }.flatten())
-    }
 }
 
 // https://github.com/ben-manes/caffeine/blob/master/build.gradle
+coveralls {
+    jacocoReportPath = "${buildDir}/reports/jacoco/report.xml"
+}
+
+coverallsJacoco {
+    def jacocoJupTestReportTask = project.tasks.getByName('jacocoJupTestReport')
+    reportPath = "${buildDir}/reports/jacoco/report.xml"
+    reportSourceSets = files(jacocoJupTestReportTask.sourceDirectories.collect{ it.listFiles() }.flatten())
+}
 
 // https://github.com/codeclimate/test-reporter/issues/243
 // task jacocoFixForCodeClimate(type: Copy) {
