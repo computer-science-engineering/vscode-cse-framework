@@ -18,6 +18,12 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 
 ### Security
 
+## [0.0.13] - 2021-04-10
+
+### Fixed
+
+- Fixed `CodeQL` workflow.
+
 ## [0.0.12] - 2021-04-10
 
 ### Fixed
@@ -132,7 +138,9 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.11..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.13..HEAD
+[0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.12..v0.0.13
+[0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.11..v0.0.12
 [0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.10..v0.0.11
 [0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.9..v0.0.10
 [0.0.9]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.8..v0.0.9
