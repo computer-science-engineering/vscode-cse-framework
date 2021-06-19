@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog], and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [0.0.15] - 2021-06-19
+
+### Changed
+
+- Update dependency org.sonarqube:org.sonarqube.gradle.plugin to v3.3
+- Update dependency gradle to v7.1
+
 ## [Unreleased]
 
 ### Added
@@ -144,7 +151,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.14..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.15..HEAD
+[0.0.15]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.14..v0.0.15
 [0.0.14]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.13..v0.0.14
 [0.0.13]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.12..v0.0.13
 [0.0.12]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.11..v0.0.12
