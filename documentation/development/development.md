@@ -4,6 +4,8 @@ Until the CI automation is in place following steps may be followed:
 
 - Update code.
 - Update CHANGELOG.md.
+    - Add section as per version number.
+    - Update versions section at the end.
 - Update version number in package.json.
 - Build: Run `make create-package`.
 - Upload generated vsix file to [VSCode marketplace](https://marketplace.visualstudio.com/manage).
