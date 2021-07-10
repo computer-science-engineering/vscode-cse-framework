@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog], and this project adheres to [Semantic Versioning][Semantic Versioning].
 
+## [0.0.17] - 2021-07-10
+
+### Changed
+
+- Updated gradle to 7.1.1.
+- Updated dependency `org.apiguardian:apiguardian-api` to v1.1.2.
+
 ## [Unreleased]
 
 ### Added
@@ -157,7 +164,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.16..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.17..HEAD
+[0.0.17]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.16..v0.0.17
 [0.0.16]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.15..v0.0.16
 [0.0.15]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.14..v0.0.15
 [0.0.14]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.13..v0.0.14

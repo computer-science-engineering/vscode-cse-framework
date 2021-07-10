@@ -13,7 +13,7 @@ plugins {
     id 'com.github.kt3k.coveralls' version '2.12.0'
 }
 
-repositories {
+repositories { 
     // https://stackoverflow.com/questions/36029754/force-gradle-to-use-http-instead-of-https
     // https://discuss.gradle.org/t/how-to-change-gradle-plugin-portal-from-https-to-http/10847/12
     mavenLocal()
@@ -66,7 +66,7 @@ eclipse.jdt.file.withProperties { props ->
 // gradle support from JUnit5 team that we removed after gradle native support for JUnit5: http://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle
 test {
     jvmArgs '--enable-preview'
-
+    
     // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html
     // Enable JUnit 5 (Gradle 4.6+).
     useJUnitPlatform {
@@ -92,9 +92,9 @@ dependencies {
 	//testCompile("org.junit.platform:junit-platform-runner:${junitPlatformVersion}")
     // Only needed to run tests in an (IntelliJ) IDE(A) that bundles an older version
 	//testRuntimeOnly("org.junit.platform:junit-platform-launcher:${junitPlatformVersion}")
-
+    
 	// To avoid compiler warnings about @API annotations in JUnit code
-	testCompileOnly('org.apiguardian:apiguardian-api:1.1.1')
+	testCompileOnly('org.apiguardian:apiguardian-api:1.1.2')
     implementation('org.apiguardian:apiguardian-api:1.0.0')
 
     // To use Log4J's LogManager
@@ -152,13 +152,13 @@ afterEvaluate {
         def jacocoJupTestReportTask = project.tasks.getByName('jacocoJupTestReport')
         reportPath = "${buildDir}/reports/jacoco/report.xml"
         reportSourceSets = files(jacocoJupTestReportTask.sourceDirectories.collect{ it.listFiles() }.flatten())
-    }
+    } 
 }
 
 // https://github.com/ben-manes/caffeine/blob/master/build.gradle
 coveralls {
     jacocoReportPath = "${buildDir}/reports/jacoco/report.xml"
-}
+}  
 
 // https://github.com/codeclimate/test-reporter/issues/243
 // task jacocoFixForCodeClimate(type: Copy) {
@@ -172,7 +172,7 @@ coveralls {
 
 // https://stackoverflow.com/questions/3963708/gradle-how-to-display-test-results-in-the-console-in-real-time
 tasks.withType(Test) {
-    testLogging {
+    testLogging {        
         // set options for log level LIFECYCLE
         events TestLogEvent.FAILED,
                //TestLogEvent.PASSED,
@@ -198,9 +198,9 @@ tasks.withType(Test) {
         }
         info.events = debug.events
         info.exceptionFormat = debug.exceptionFormat
-
+        
         afterSuite { desc, result ->
-        if (!desc.parent) { // will match the outermost suite
+        if (!desc.parent) { // will match the outermost suite            
                 def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} successes, ${result.failedTestCount} failures, ${result.skippedTestCount} skipped)"
                 def startItem = '|  ', endItem = '  |'
                 def repeatLength = startItem.length() + output.length() + endItem.length()
