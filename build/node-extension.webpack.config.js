@@ -39,14 +39,8 @@ const config = {
       }
     ]
   },
-  plugins: [  
-    new CleanWebpackPlugin(),
-    // @ts-ignore
-    new CopyPlugin({
-      patterns: [
-        { from: "./static-to-copy/", to: "static-to-copy" }
-      ],
-    }),
+  plugins: [
+    new CleanWebpackPlugin()
   ],
 };
 module.exports = config;

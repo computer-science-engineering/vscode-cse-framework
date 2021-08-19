@@ -2,7 +2,7 @@
 	"name": "vscode-cse-framework",
 	"displayName": "cse-framework",
 	"description": "VSCode extension for cse repositories - provides templates, snippets, etc.",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"publisher": "manas-talukdar",
 	"license": "MIT",
 	"repository": {
@@ -19,17 +19,9 @@
 		"Other",
 		"Snippets"
 	],
-	"activationEvents": [
-		"onCommand:vscode-cse-framework.copyFramingOverwrite"
-	],
+	"activationEvents": [],
 	"main": "./dist/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "vscode-cse-framework.copyFramingOverwrite",
-				"title": "CSE Framework: Copy Framing - Overwrite"
-			}
-		],
 		"snippets": [
 			{
 				"language": "java",

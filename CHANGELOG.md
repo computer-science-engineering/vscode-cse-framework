@@ -4,13 +4,6 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][Keep a Changelog], and this project adheres to [Semantic Versioning][Semantic Versioning].
 
-## [0.0.17] - 2021-07-10
-
-### Changed
-
-- Updated gradle to 7.1.1.
-- Updated dependency `org.apiguardian:apiguardian-api` to v1.1.2.
-
 ## [Unreleased]
 
 ### Added
@@ -24,6 +17,19 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 ### Fixed
 
 ### Security
+
+## [0.0.18] - 2021-08-18
+
+### Removed
+
+- Removed copy framing functionality.
+
+## [0.0.17] - 2021-07-10
+
+### Changed
+
+- Updated gradle to 7.1.1.
+- Updated dependency `org.apiguardian:apiguardian-api` to v1.1.2.
 
 ## [0.0.16] - 2021-06-26
 
@@ -164,7 +170,8 @@ The format is based on [Keep a Changelog][Keep a Changelog], and this project ad
 [Semantic Versioning]: https://semver.org/
 
 <!-- Versions -->
-[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.17..HEAD
+[Unreleased]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.18..HEAD
+[0.0.17]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.17..v0.0.18
 [0.0.17]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.16..v0.0.17
 [0.0.16]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.15..v0.0.16
 [0.0.15]: https://github.com/computer-science-engineering/vscode-cse-framework/compare/v0.0.14..v0.0.15
